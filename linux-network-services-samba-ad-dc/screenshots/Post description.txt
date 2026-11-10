@@ -1,0 +1,70 @@
+Post Text
+🚀 Just completed a comprehensive Linux Network Infrastructure Deployment!
+
+I'm excited to share that I've successfully deployed a complete enterprise-grade network environment using Linux, integrating multiple critical services:
+
+✅ DHCP Server – Dynamic IP allocation (192.168.16.101-200) with IP reservation
+✅ Zimbra Mail Server – Full email service with web interface (mail.it16.local)
+✅ Samba Active Directory – Domain controller with OUs (Admins, Staff, Students)
+✅ Apache Web Server – Hosted "HELLO NMA" page with blue background
+✅ DNS Integration – Unified resolution using Samba Internal DNS
+✅ Domain Authentication – Kerberos-based authentication across all VMs
+
+🛠 Tech Stack: CentOS 7, Ubuntu Server 22.04, Zimbra Collaboration Suite, Samba AD DC, ISC DHCP, Apache HTTP Server, Oracle VirtualBox
+
+🔧 What I Learned:
+
+Installing and configuring Zimbra mail server from scratch
+
+Setting up Samba as an Active Directory Domain Controller
+
+Integrating mail and directory services under the same domain namespace
+
+Troubleshooting DNS resolution and cross-service authentication issues
+
+This hands-on experience strengthened my understanding of Linux system administration, network services, and identity management.
+
+📸 Screenshots and detailed documentation available upon request.
+
+#Linux #SystemAdministration #Zimbra #Samba #ActiveDirectory #Networking #DHCP #DNS #Virtualization #EmailServer #ITInfrastructure #Homelab
+
+
+
+
+Project Title
+Network Infrastructure Deployment with Zimbra Mail Server & Samba Active Directory
+
+Project Description
+Designed and deployed a complete Linux-based network infrastructure integrating core enterprise services including DHCP, email, directory authentication, and web hosting in a virtualized environment.
+
+Technologies Used:
+
+CentOS 7, Ubuntu Server 22.04, Ubuntu Desktop 25.10
+
+Zimbra Collaboration Suite 8.8.15 (Mail Server)
+
+Samba Active Directory Domain Controller
+
+ISC DHCP Server
+
+BIND9 DNS Server (Integration)
+
+Apache HTTP Web Server
+
+Oracle VirtualBox
+
+Key Achievements:
+
+Configured Zimbra mail server with domain mail.it16.local, created multiple user accounts, and demonstrated email communication via web interface
+
+Implemented Samba AD DC with 3 Organizational Units (Admins, Staff, Students) and 3 users per OU for the domain it16.local
+
+Deployed DHCP server with dynamic IP allocation range 192.168.16.101-200 and IP reservation for specific clients
+
+Integrated DNS resolution using Samba's internal DNS to unify domain name resolution across all services
+
+Published web server with HELLO NMA page (blue background) accessible from client machines
+
+Ensured all VMs (CentOS + 2 Ubuntu clients) were in the same domain with working Kerberos authentication
+
+Outcome: Successfully delivered a fully functional multi-service Linux network environment meeting all assignment requirements, with cross-service communication and centralized domain authentication.
