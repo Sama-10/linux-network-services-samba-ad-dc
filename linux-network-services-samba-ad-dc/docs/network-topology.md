@@ -1,18 +1,38 @@
 # Network Topology
 
 ## Network Diagram
-```mermaid
-graph TD
-    subgraph "VirtualBox Internal Network: 192.168.16.0/24"
-        DC["<b>Ubuntu Server (Domain Controller)</b><br>dc1.it16.local<br>IP: 192.168.16.103 (Static)<br><br><b>Services:</b><br>- Samba AD DC<br>- DNS & Kerberos<br>- DHCP Server<br>- Web Server"]
-        
-        C1["<b>Client 1 (Ubuntu)</b><br>client-1<br>IP: DHCP Assigned<br>DNS: 192.168.16.103"]
-        
-        C2["<b>Client 2 (Ubuntu)</b><br>client-2<br>IP: DHCP Assigned<br>DNS: 192.168.16.103"]
-        
-        DC ---|Auth & DHCP| C1
-        DC ---|Auth & DHCP| C2
-    end
+
+# Network Topology
+
+## Network Diagram
+
+```text
++------------------------------------------------------------------+
+|                     VirtualBox Host Machine                      |
+|                                                                  |
+|  +------------------------------------------------------------+  |
+|  |             Internal Network: 192.168.16.0/24              |  |
+|  |                                                            |  |
+|  |   +-------------------+      +--------------------------+  |
+|  |   |   Ubuntu Server   |      |    Client 1 (Ubuntu)     |  |
+|  |   |    dc1.it16.local |      |                          |  |
+|  |   |                   |      |   IP: DHCP assigned      |  |
+|  |   |   IP: 192.168.16.103     |   DNS: 192.168.16.103    |  |
+|  |   |   (Static)        |      |                          |  |
+|  |   |                   |      +--------------------------+  |
+|  |   |   Services:       |                                    |
+|  |   |   - Samba AD DC   |      +--------------------------+  |
+|  |   |   - DNS Server    |      |    Client 2 (Ubuntu)     |  |
+|  |   |   - Kerberos      |      |                          |  |
+|  |   |   - Web Server    |      |   IP: DHCP assigned      |  |
+|  |   |   - DHCP Server   |      |   DNS: 192.168.16.103    |  |
+|  |   +-------------------+      +--------------------------+  |
+|  |                                                            |  |
+|  +------------------------------------------------------------+  |
+|                                                                  |
++------------------------------------------------------------------+
+```
+
 
 
 ## IP Address Allocation
