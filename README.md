@@ -19,6 +19,8 @@ This is an individual project completed for the **Computer Systems Engineering**
 
 ## 🖥️ Environment
 
+![Environment](linux-network-services-samba-ad-dc/screenshots/NMA-project.png)
+
 | Component | Details |
 |-----------|---------|
 | **Hypervisor** | Oracle VirtualBox |
